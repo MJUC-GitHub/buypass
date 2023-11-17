@@ -4,5 +4,11 @@
   ],
   "supported_origins": [
     "https://*"
+  ],
+  [
+  {
+    "rel": "payment-method-manifest",
+    "href": "/payment-manifest.json"
+  }
   ]
 }
