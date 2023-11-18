@@ -1,3 +1,7 @@
+[buypass](https://github.com/bypassiwastaken/buypass) by [bypassiwastaken](https://github.com/bypassiwastaken)
+
+forked from [buypass](https://github.com/reactor-coding/buypass)  (remixed by [reactor-coding](https://github.com/reactor-coding/))
+
 # The Buypass
 
   **WARNING: This is a mid bypass. If you don't like it, cope.**
