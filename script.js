@@ -2,7 +2,7 @@ function buypass() {
   if (!window.PaymentRequest)
     return alert("Payment Request APIに未対応なため使えません");
 
-  const paymentRequest = new PaymentRequest(
+  new PaymentRequest(
     [
       {
         supportedMethods: location.origin + "/payment-manifest.json",
@@ -19,15 +19,6 @@ function buypass() {
           currency: "USD",
         },
       },
-      displayItems: [
-        {
-          label: "_",
-          amount: {
-            value: "1",
-            currency: "USD",
-          },
-        },
-      ],
     }
   ).show();
 }
