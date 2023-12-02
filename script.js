@@ -1,6 +1,8 @@
 function buypass() {
   if (!window.PaymentRequest)
-    return alert("Payment Request APIに未対応なため使えません");
+    return alert(
+      "Cannot be used because the browser does not support the Payment Request API"
+    );
 
   new PaymentRequest(
     [
