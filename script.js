@@ -19,14 +19,17 @@ function buypass() {
           currency: "USD",
         },
       },
+      displayItems: [
+        {
+          label: "_",
+          amount: {
+            value: "1",
+            currency: "USD",
+          },
+        },
+      ],
     }
   ).show();
-  paymentRequest.onshow = (event) => {
-    const modal = event.openWindow();
-    modal.style.width = "500px"; // 適切なサイズに変更
-    modal.style.height = "500px";
-  };
-  paymentRequest.show();
 }
 
 document.querySelector("button").onclick = buypass;
